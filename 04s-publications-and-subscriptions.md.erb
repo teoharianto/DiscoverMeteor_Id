@@ -4,7 +4,7 @@ slug: publications-and-subscriptions
 date: 0004/01/02
 number: 4.5
 sidebar: true
-contents: Understand how publications and subscriptions work.|Learn what the default Autopublish package does.|See a few more examples of publication patterns.
+contents: Memahami bagaimana publications dan subscriptions bekerja.|Belajar apa yang dapat dilakukan oleh package standar Autopublish .|Melihat beberapa contoh pola atau pattern publications .
 paragraphs: 52
 ---
 
@@ -30,7 +30,7 @@ paragraphs: 52
 
 ////
 
-<%= diagram "client-server", "Pushing a subset of the database to the client.", "pull-right" %>
+<%= diagram "client-server", "Memberikan subset dari database ke klien", "pull-right" %>
 
 ////
 
@@ -46,13 +46,13 @@ paragraphs: 52
 
 ////
 
-<%= diagram "collections-1", "All the posts contained in our database.", "pull-center" %>
+<%= diagram "collections-1", "Semua posting ada di dalam database kami.", "pull-center" %>
 
 ////
 
 ////
 
-<%= diagram "collections-2", "Excluding flagged posts.", "pull-center" %>
+<%= diagram "collections-2", "Termasuk menandai posting.", "pull-center" %>
 
 ////
 
@@ -83,7 +83,7 @@ Meteor.publish('posts', function() {
 
 ////
 
-<%= diagram "collections-3", "Subscribing to Bob's posts will mirror them on the client.", "pull-center" %>
+<%= diagram "collections-3", "Subscribing untuk postingan Bob's akan menggambarkan mereka pada client.", "pull-center" %>
 
 ////
 
@@ -107,7 +107,7 @@ Meteor.subscribe('posts', 'bob-smith');
 
 ////
 
-<%= diagram "collections-4", "Selecting a subset of documents on the client.", "pull-center" %>
+<%= diagram "collections-4", "Memilih subset dokumen di client.", "pull-center" %>
 
 ////
 
@@ -136,7 +136,7 @@ Template.posts.helpers({
 
 ////
 
-### Publishing Full Collections
+### Publishing Semua Koleksi
 
 ////
 
@@ -146,11 +146,11 @@ Meteor.publish('allPosts', function(){
 });
 ~~~
 
-<%= diagram "fullcollection", "Publishing a full collection", "pull-center" %>
+<%= diagram "fullcollection", "Publishing semua koleksi", "pull-center" %>
 
 ////
 
-### Publishing Partial Collections
+### Publishing Sebagian Koleksi
 
 ////
 
@@ -160,11 +160,11 @@ Meteor.publish('somePosts', function(){
 });
 ~~~
 
-<%= diagram "partialcollection", "Publishing a partial collection", "pull-center" %>
+<%= diagram "partialcollection", "Publishing sebagian koleksi", "pull-center" %>
 
 <% note do %>
 
-### Behind The Scenes
+### Di Belakang Layar
 
 ////
 
@@ -182,7 +182,7 @@ Meteor.publish('somePosts', function(){
 
 <% end %>
 
-### Publishing Partial Properties
+### Publishing Sebagian Properties
 
 ////
 
@@ -196,7 +196,7 @@ Meteor.publish('allPosts', function(){
 });
 ~~~
 
-<%= diagram "partialproperties", "Publishing partial properties", "pull-center" %>
+<%= diagram "partialproperties", "Publishing sebagian properties", "pull-center" %>
 
 ////
 
@@ -208,7 +208,7 @@ Meteor.publish('allPosts', function(){
 });
 ~~~
 
-### Summing Up
+### Kesimpulan
 
 ////
 
